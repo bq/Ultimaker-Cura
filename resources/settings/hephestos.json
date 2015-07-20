@@ -5,7 +5,7 @@
     "inherits": "fdmprinter.json",
 
     "machine_settings": {
-		"machine_start_gcode": {
+        "machine_start_gcode": {
             "default": "; -- START GCODE --\n;Sliced at: {day} {date} {time}\n;Basic settings: Layer height: {layer_height} Walls: {wall_thickness} Fill: {fill_density}\n;Print time: {print_time}\n;Filament used: {filament_amount}m {filament_weight}g\n;Filament cost: {filament_cost}\nG21                     ;set units to millimetres\nG90                     ;set to absolute positioning\nM106 S0                 ;set fan speed to zero (turned off)\nG28 X0 Y0               ;move to the X/Y origin (Home)\nG28 Z0                  ;move to the Z origin (Home)\nG1 Z15.0 F1200          ;move Z to position 15.0 mm\nG92 E0                  ;zero the extruded length\nG1 E20 F200             ;extrude 20mm of feed stock\nG92 E0                  ;zero the extruded length again\n; -- end of START GCODE --"
         },
         "machine_end_gcode": {
@@ -50,13 +50,13 @@
         }
     },
     "categories": {
-		"resolution": {
+        "resolution": {
             "settings": {
                 "layer_height": {
                     "default": 0.2
                 },
                 "layer_height_0": {
-					"default": 0.2,
+                    "default": 0.2,
                     "visible": true
                 },
                 "shell_thickness": {
@@ -108,7 +108,7 @@
                 },
                 "material_bed_temperature": {
                     "default": 0,
-					"visible": false
+                    "visible": false
                 },
                 "material_diameter": {
                     "default": 1.75,
@@ -118,40 +118,40 @@
                     "default": 100.0,
                     "visible": true
                 },
-				"retraction_enable": {
+                "retraction_enable": {
                     "default": true,
-					"children": {
-						"retraction_speed": {
-							"default": 10.0,
-							"visible": true,
-							"children": {
-								"retraction_retract_speed": {
-									"default": 10.0,
-									"visible": true
-								},
-								"retraction_prime_speed": {
-									"default": 10.0,
-									"visible": true
-								}
-							}
-						},
-						"retraction_amount": {
-                            "default": 1.0,
-							"visible": true
+                    "children": {
+                        "retraction_speed": {
+                            "default": 30.0,
+                            "visible": true,
+                            "children": {
+                                "retraction_retract_speed": {
+                                    "default": 30.0,
+                                    "visible": true
+                                },
+                                "retraction_prime_speed": {
+                                    "default": 30.0,
+                                    "visible": true
+                                }
+                            }
                         },
-						"retraction_minimal_extrusion": {
+                        "retraction_amount": {
+                            "default": 2.0,
+                            "visible": true
+                        },
+                        "retraction_minimal_extrusion": {
                             "default": 0.01,
-							"visible": false
-						},
-						"retraction_hop": {
+                            "visible": false
+                        },
+                        "retraction_hop": {
                             "default": 0.75,
-							"visible": false
+                            "visible": false
                         }
-					}
-				}
+                    }
+                }
             }
         },
-		"speed": {
+        "speed": {
             "settings": {
                 "speed_print": {
                     "default": 40.0,
@@ -193,7 +193,7 @@
                 }
             }
         },
-		"cooling": {
+        "cooling": {
             "settings": {
                 "cool_fan_full_at_height": {
                     "default": 1,
@@ -201,7 +201,7 @@
                 }
             }
         },
-		"support": {
+        "support": {
             "settings": {
                 "support_enable": {
                     "default": false
@@ -232,7 +232,7 @@
                 }
             }
         },
-		"platform_adhesion": {
+        "platform_adhesion": {
             "settings": {
                 "skirt_minimal_length": {
                     "default": 150
