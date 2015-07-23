@@ -1,6 +1,6 @@
 {
-    "id": "witbox",
-    "name": "BQ Witbox",
+    "id": "witbox_LD",
+    "name": "BQ Witbox (LD)",
     "platform": "witbox_platform.stl",
     "inherits": "fdmprinter.json",
 

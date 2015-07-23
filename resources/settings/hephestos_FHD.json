@@ -1,6 +1,6 @@
 {
-    "id": "hephestos",
-    "name": "BQ Prusa i3 Hephestos",
+    "id": "hephestos_FHD",
+    "name": "BQ Prusa i3 Hephestos (FHD)",
     "platform": "hephestos_platform.stl",
     "inherits": "fdmprinter.json",
 

@@ -1,6 +1,6 @@
 {
-    "id": "hephestos_XL",
-    "name": "BQ Prusa i3 Hephestos XL",
+    "id": "hephestos_XL_LD",
+    "name": "BQ Prusa i3 Hephestos XL (LD)",
     "platform": "hephestos_platform.stl",
     "inherits": "fdmprinter.json",
 
@@ -49,7 +49,7 @@
             "default": 0.4
         }
     },
-"categories": {
+    "categories": {
         "resolution": {
             "settings": {
                 "layer_height": {
