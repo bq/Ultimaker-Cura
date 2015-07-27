@@ -1,6 +1,6 @@
 {
-    "id": "hephestos",
-    "name": "BQ Prusa i3 Hephestos",
+    "id": "hephestos_XL_LD",
+    "name": "BQ Prusa i3 Hephestos XL (LD)",
     "platform": "hephestos_platform.stl",
     "inherits": "fdmprinter.json",
 
@@ -12,10 +12,10 @@
             "default": "; -- END GCODE --\nM104 S0                 ;set extruder temperature to zero (turned off)\nG91                     ;set to relative positioning\nG1 E-20 F300            ;retract the filament a bit to release some of the pressure\nG1 Z10                  ;move extruder up 10 mm\nG90                     ;set to absolute positioning\nG1 X0 Y180 F1200        ;expose the platform\nM84                     ;turn off steppers\n; -- end of END GCODE --"
         },
         "machine_width": {
-            "default": 215
+            "default": 200
         },
         "machine_depth": {
-            "default": 210
+            "default": 300
         },
         "machine_height": {
             "default": 180
@@ -53,10 +53,10 @@
         "resolution": {
             "settings": {
                 "layer_height": {
-                    "default": 0.2
+                    "default": 0.3
                 },
                 "layer_height_0": {
-                    "default": 0.2,
+                    "default": 0.3,
                     "visible": true
                 },
                 "shell_thickness": {
@@ -85,7 +85,7 @@
                                     }
                                 },
                                 "bottom_thickness": {
-                                    "default": 0.4,
+                                    "default": 0.3,
                                     "visible": false,
                                     "children": {
                                         "bottom_layers": {
@@ -154,10 +154,10 @@
         "speed": {
             "settings": {
                 "speed_print": {
-                    "default": 40.0,
+                    "default": 70.0,
                     "children": {
                         "speed_infill": {
-                            "default": 40.0,
+                            "default": 70.0,
                             "visible": false
                         },
                         "speed_wall": {
