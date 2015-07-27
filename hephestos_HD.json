@@ -1,7 +1,7 @@
 {
-    "id": "witbox",
-    "name": "BQ Witbox",
-    "platform": "witbox_platform.stl",
+    "id": "hephestos_HD",
+    "name": "BQ Prusa i3 Hephestos (HD)",
+    "platform": "hephestos_platform.stl",
     "inherits": "fdmprinter.json",
 
     "machine_settings": {
@@ -9,16 +9,16 @@
             "default": "; -- START GCODE --\n;Sliced at: {day} {date} {time}\n;Basic settings: Layer height: {layer_height} Walls: {wall_thickness} Fill: {fill_density}\n;Print time: {print_time}\n;Filament used: {filament_amount}m {filament_weight}g\n;Filament cost: {filament_cost}\nG21                     ;set units to millimetres\nG90                     ;set to absolute positioning\nM106 S0                 ;set fan speed to zero (turned off)\nG28 X0 Y0               ;move to the X/Y origin (Home)\nG28 Z0                  ;move to the Z origin (Home)\nG1 Z15.0 F1200          ;move Z to position 15.0 mm\nG92 E0                  ;zero the extruded length\nG1 E20 F200             ;extrude 20mm of feed stock\nG92 E0                  ;zero the extruded length again\n; -- end of START GCODE --"
         },
         "machine_end_gcode": {
-            "default": "; -- END GCODE --\nM104 S0                 ;set extruder temperature to zero (turned off)\nG91                     ;set to relative positioning\nG1 E-20 F300            ;retract the filament a bit to release some of the pressure\nG90                     ;set to absolute positioning\nG1 Z200                 ;move the platform to the bottom\nG28 X0 Y0               ;move to the X/Y origin (Home)\nM84                     ;turn off steppers\n; -- end of END GCODE --"
+            "default": "; -- END GCODE --\nM104 S0                 ;set extruder temperature to zero (turned off)\nG91                     ;set to relative positioning\nG1 E-20 F300            ;retract the filament a bit to release some of the pressure\nG1 Z10                  ;move extruder up 10 mm\nG90                     ;set to absolute positioning\nG1 X0 Y180 F1200        ;expose the platform\nM84                     ;turn off steppers\n; -- end of END GCODE --"
         },
         "machine_width": {
-            "default": 297
+            "default": 215
         },
         "machine_depth": {
             "default": 210
         },
         "machine_height": {
-            "default": 200
+            "default": 180
         },
         "machine_heated_bed": {
             "default": false
@@ -43,7 +43,7 @@
             [[ 115.0, -112.5], [ 108.0, -112.5], [ 110.0, -104.5], [ 115.0, -104.5]]
         ]},
         "machine_platform_offset": {
-            "default": [0.0, -145.0, -38.0]
+            "default": [0.0, 100.0, 0.0]
         },
         "machine_nozzle_tip_outer_diameter": {
             "default": 0.4
@@ -53,10 +53,10 @@
         "resolution": {
             "settings": {
                 "layer_height": {
-                    "default": 0.2
+                    "default": 0.1
                 },
                 "layer_height_0": {
-                    "default": 0.2,
+                    "default": 0.1,
                     "visible": true
                 },
                 "shell_thickness": {
@@ -85,7 +85,7 @@
                                     }
                                 },
                                 "bottom_thickness": {
-                                    "default": 0.4,
+                                    "default": 0.1,
                                     "visible": false,
                                     "children": {
                                         "bottom_layers": {
@@ -154,10 +154,10 @@
         "speed": {
             "settings": {
                 "speed_print": {
-                    "default": 40.0,
+                    "default": 50.0,
                     "children": {
                         "speed_infill": {
-                            "default": 40.0,
+                            "default": 50.0,
                             "visible": false
                         },
                         "speed_wall": {
@@ -185,7 +185,7 @@
                     }
                 },
                 "speed_travel": {
-                    "default": 120.0
+                    "default": 110.0
                 },
                 "speed_layer_0": {
                     "default": 20.0,
