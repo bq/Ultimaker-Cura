@@ -1,5 +1,5 @@
 {
-    "id": "witbox_FF",
+    "id": "BQ_Witbox_Filaflex",
     "name": "BQ Witbox (Filaflex)",
     "platform": "witbox_platform.stl",
     "inherits": "fdmprinter.json",

@@ -1,6 +1,6 @@
 {
-    "id": "witbox_HD",
-    "name": "BQ Witbox (HD)",
+    "id": "BQ_Witbox_High_Definition",
+    "name": "BQ Witbox (High Definition)",
     "platform": "witbox_platform.stl",
     "inherits": "fdmprinter.json",
 

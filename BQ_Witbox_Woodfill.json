@@ -1,6 +1,6 @@
 {
-    "id": "witbox_WF",
-    "name": "BQ Witbox (WoodFill)",
+    "id": "BQ_Witbox_Woodfill",
+    "name": "BQ Witbox (Woodfill)",
     "platform": "witbox_platform.stl",
     "inherits": "fdmprinter.json",
 

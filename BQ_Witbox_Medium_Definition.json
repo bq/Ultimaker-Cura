@@ -1,6 +1,6 @@
 {
-    "id": "witbox",
-    "name": "BQ Witbox",
+    "id": "BQ_Witbox_Medium_Definition",
+    "name": "BQ Witbox (Medium Definition)",
     "platform": "witbox_platform.stl",
     "inherits": "fdmprinter.json",
 
