@@ -1,5 +1,5 @@
 {
-    "id": "hephestos_XL_FF",
+    "id": "BQ_Hephestos_XL_Filaflex",
     "name": "BQ Prusa i3 Hephestos XL (Filaflex)",
     "platform": "hephestos_platform.stl",
     "inherits": "fdmprinter.json",
