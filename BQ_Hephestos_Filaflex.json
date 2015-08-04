@@ -71,11 +71,11 @@
                             "visible": false
                         },
                         "top_bottom_thickness": {
-                            "default": 0.8,
+                            "default": 1.0,
                             "visible": false,
                             "children": {
                                 "top_thickness": {
-                                    "default": 0.8,
+                                    "default": 1.0,
                                     "visible": false,
                                     "children": {
                                         "top_layers": {
