@@ -53,17 +53,17 @@
         "resolution": {
             "settings": {
                 "layer_height": {
-                    "default": 0.1
+                    "default": 0.16
                 },
                 "layer_height_0": {
-                    "default": 0.2,
+                    "default": 0.16,
                     "visible": true
                 },
                 "shell_thickness": {
                     "default": 0.8,
                     "children": {
                         "wall_thickness": {
-                            "default": 1.2,
+                            "default": 0.8,
                             "visible": false
                         },
                         "alternate_extra_perimeter": {
@@ -71,25 +71,25 @@
                             "visible": false
                         },
                         "top_bottom_thickness": {
-                            "default": 0.8,
+                            "default": 1.0,
                             "visible": false,
                             "children": {
                                 "top_thickness": {
-                                    "default": 0.8,
+                                    "default": 1.0,
                                     "visible": false,
                                     "children": {
                                         "top_layers": {
-                                            "default": 8,
+                                            "default": 4,
                                             "visible": false
                                         }
                                     }
                                 },
                                 "bottom_thickness": {
-                                    "default": 0.1,
+                                    "default": 1.0,
                                     "visible": false,
                                     "children": {
                                         "bottom_layers": {
-                                            "default": 8,
+                                            "default": 4,
                                             "visible": false
                                         }
                                     }
@@ -154,22 +154,22 @@
         "speed": {
             "settings": {
                 "speed_print": {
-                    "default": 50.0,
+                    "default": 40.0,
                     "children": {
                         "speed_infill": {
                             "default": 40.0,
                             "visible": false
                         },
                         "speed_wall": {
-                            "default":35.0,
+                            "default": 30.0,
                             "visible": false,
                             "children": {
                                 "speed_wall_0": {
-                                    "default": 35.0,
+                                    "default": 30.0,
                                     "visible": false
                                 },
                                 "speed_wall_x": {
-                                    "default": 35.0,
+                                    "default": 20.0,
                                     "visible": false
                                 }
                             }
