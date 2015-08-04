@@ -60,7 +60,7 @@
                     "visible": true
                 },
                 "shell_thickness": {
-                    "default": 1.2,
+                    "default": 0.8,
                     "children": {
                         "wall_thickness": {
                             "default": 0.8,
@@ -85,7 +85,7 @@
                                     }
                                 },
                                 "bottom_thickness": {
-                                    "default": 0.4,
+                                    "default": 1.0,
                                     "visible": false,
                                     "children": {
                                         "bottom_layers": {
@@ -122,29 +122,29 @@
                     "default": true,
                     "children": {
                         "retraction_speed": {
-                            "default": 22.0,
+                            "default": 10.0,
                             "visible": true,
                             "children": {
                                 "retraction_retract_speed": {
-                                    "default": 30.0,
+                                    "default": 10.0,
                                     "visible": true
                                 },
                                 "retraction_prime_speed": {
-                                    "default": 30.0,
+                                    "default": 10.0,
                                     "visible": true
                                 }
                             }
                         },
                         "retraction_amount": {
-                            "default": 2.5,
+                            "default": 1.0,
                             "visible": true
                         },
                         "retraction_minimal_extrusion": {
-                            "default": 0.02,
+                            "default": 0.01,
                             "visible": false
                         },
                         "retraction_hop": {
-                            "default": 0.0,
+                            "default": 0.75,
                             "visible": false
                         }
                     }
@@ -157,38 +157,38 @@
                     "default": 20.0,
                     "children": {
                         "speed_infill": {
-                            "default": 40.0,
+                            "default": 20.0,
                             "visible": false
                         },
                         "speed_wall": {
-                            "default":35.0,
+                            "default": 15.0,
                             "visible": false,
                             "children": {
                                 "speed_wall_0": {
-                                    "default": 35.0,
+                                    "default": 15.0,
                                     "visible": false
                                 },
                                 "speed_wall_x": {
-                                    "default": 35.0,
+                                    "default": 15.0,
                                     "visible": false
                                 }
                             }
                         },
                         "speed_topbottom": {
-                            "default": 35.0,
+                            "default": 15.0,
                             "visible": false
                         },
                         "speed_support": {
-                            "default": 35.0,
+                            "default": 15.0,
                             "visible": false
                         }
                     }
                 },
                 "speed_travel": {
-                    "default": 150.0
+                    "default": 110.0
                 },
                 "speed_layer_0": {
-                    "default": 20.0,
+                    "default": 15.0,
                     "visible": false
                 }
             }
@@ -211,7 +211,7 @@
                     "visible": true
                 },
                 "support_z_distance": {
-                    "default": 0.15,
+                    "default": 0.2,
                     "visible": false
                 },
                 "support_bottom_stair_step_height": {
@@ -227,7 +227,7 @@
                     "visible": true
                 },
                 "support_fill_rate": {
-                    "default": 15,
+                    "default": 10,
                     "visible": false
                 }
             }
@@ -238,16 +238,16 @@
                     "default": 150
                 },
                 "raft_line_spacing": {
-                    "default": 3.0
-                },
-                "raft_base_linewidth": {
                     "default": 1.0
                 },
+                "raft_base_linewidth": {
+                    "default": 0.7
+                },
                 "raft_interface_thickness": {
-                    "default": 0.27
+                    "default": 0.2
                 },
                 "raft_interface_linewidth": {
-                    "default": 0.4
+                    "default": 0.2
                 }
             }
         }
