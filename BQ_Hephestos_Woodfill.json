@@ -169,7 +169,7 @@
                                     "visible": false
                                 },
                                 "speed_wall_x": {
-                                    "default": 30.0,
+                                    "default": 20.0,
                                     "visible": false
                                 }
                             }
